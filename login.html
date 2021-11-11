@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="copyright" content="MACode ID, https://macodeid.com/">
+	<title>LOGIN</title>
+	<link href="../revetive/assets/css/bootstrap.css" rel="stylesheet" />
+	<link href="../revetive/assets/css/maicons.css" rel="stylesheet" />
+	<link href="../revetive/assets/vendor/animate/animate.css" rel="stylesheet" />
+	<link href="../revetive/assets/vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" />
+	<link href="../revetive/assets/vendor/fancybox/css/jquery.fancybox.css" rel="stylesheet" />
+	<link href="../revetive/assets/css/theme.css" rel="stylesheet" />
+</head>
+<body>
+    <title>
+        How to call PHP function
+        on the click of a Button ?
+    </title>
+</head>
+  
+<body style="text-align:center;">
+      
+    <h1 style="color:green;">
+        AHOY matey
+    </h1>
+      
+    <h4>
+        How to call PHP function
+        on the click of a Button ?
+    </h4>
+      
+    <?php
+           if(array_key_exists('button1', $_POST)) {
+            button1();
+        }
+        else if(array_key_exists('button2', $_POST)) {
+            button2();
+        }
+        function button1() {
+            echo "This is Button1 that is selected";
+        }
+        function button2() {
+            echo "This is Button2 that is selected";
+        }
+   ?>
+    <form method="post">
+        <input type="submit" name="button1"
+                class="button" value="Button1" />
+          
+        <input type="submit" name="button2"
+                class="button" value="Button2" />
+    </form>
+</head>
+  
+<div class="register-form">
+
+
+                    
+</html>
